@@ -1,0 +1,18 @@
+.cursor-container {
+  .cursor {
+    display: "inline-block";
+    font-size: "larger";
+  }
+
+  &.cursor-line {
+    .cursor::before {
+      content: "|";
+    }
+  }
+
+  &.cursor-block {
+    .text .last-char {
+      filter: invert(100%);
+    }
+  }
+}
